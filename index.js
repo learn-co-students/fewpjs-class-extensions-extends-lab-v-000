@@ -48,5 +48,4 @@ class Square extends Polygon {
     return allEqual(this.sides);
   }
 
-
 } 
