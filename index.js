@@ -17,7 +17,11 @@ class Polygon {
 class Triangle extends Polygon {
 
     get isValid() {
-        
+        if (a + b < c || a + c < b || b + c < a) {
+            return false
+        } else {
+            return true
+        }
     }
 }
 
