@@ -16,6 +16,7 @@ class Polygon {
 
 class Triangle extends Polygon {
 
+    // can add checks if an array is available and the countSides is equal to 3
     get isValid() {
         let a = this.sides[0];
         let b = this.sides[1];
@@ -31,10 +32,11 @@ class Triangle extends Polygon {
 
 class Square extends Polygon {
 
+     // can add checks if an array is available
     get area() {
         return this.sides[0] ** 2;
     }
-
+    // can add checks if an array is available and the countSides is equal to 4
     get isValid() {
         let a = this.sides[0];
         let b = this.sides[1];
