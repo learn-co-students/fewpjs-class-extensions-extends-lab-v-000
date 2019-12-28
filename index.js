@@ -1,9 +1,7 @@
 // Your code here
 
 class Polygon{
-
   constructor(numbers){
-    console.log(numbers)
     this.numbers = numbers
   }
   get countSides(){
@@ -13,14 +11,37 @@ class Polygon{
 
   get perimeter(){
     //counts the sum of each side
+    let total = 0
+    return this.numbers.forEach(value => {
+      total += value
+        return total
+    })
   }
-
 }
 
 class Triangle extends Polygon {
-  // inherits constructor from Pet
+  get isValid(){
+    if (countSides() === 3){
+      return true
+    }
+    else{
+      return false
+    }
+  }
 }
 
 class Square extends Polygon {
-  // inherits constructor from Pet
+get isValid(){
+  if (countSides(this.numbers) === 4){
+    return true
+  }
+  else{
+    return false
+    }
+  }
+
+
+get area(){
+
+}
 }
