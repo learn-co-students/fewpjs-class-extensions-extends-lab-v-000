@@ -21,7 +21,7 @@ class Polygon{
 
 class Triangle extends Polygon {
   get isValid(){
-    if (countSides() === 3){
+    if (this.sides === 3){
       return true
     }
     else{
@@ -42,6 +42,7 @@ get isValid(){
 
 
 get area(){
+return this.numbers[0] * this.numbers[1]
+  }
 
-}
 }
