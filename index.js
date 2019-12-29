@@ -12,10 +12,10 @@ class Polygon{
   get perimeter(){
     //counts the sum of each side
     let total = 0
-    return this.numbers.forEach(value => {
+    this.numbers.forEach(value => {
       total += value
-        return total
     })
+    return total
   }
 }
 
