@@ -20,10 +20,7 @@ class Triangle extends Polygon{
         const a = this.sides[0];
         const b = this.sides[1];
         const c = this.sides[2];
-        if (a + b > c && a + c > b && b + c > a ){
-         return true
-        }
-         return false
+        return (a + b > c && a + c > b && b + c > a )
     } 
 }
 
