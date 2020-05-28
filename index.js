@@ -1,6 +1,6 @@
 // Your code here
 
-class Polygon {
+class Polygon { // The one thing I kept forgetting was to check that the sidesArray WAS an Array.
   constructor(sidesArray) {
     this.sides = sidesArray;
   }
@@ -34,8 +34,8 @@ class Square extends Polygon {
   get isValid() {
     // Four sides, and all sides have the same length as the first side
     const firstSide = this.sides[0];
-    
-    return this.sides.length === 4
+
+    return this.countSides === 4
         && this.sides.slice(1).every((side) => side === firstSide);
   }
 }
