@@ -57,7 +57,8 @@ class Square extends Polygon {
         // checks for valid square
         // if (Math.sqrt(this.arr[i]) % 1 === 0) {
         // if Number.isInteger(Math.sqrt(this.arr));
-        if (this.arr > 0 && Math.sqrt(this.arr) % 1 === 0) {
+        // if (this.arr > 0 && Math.sqrt(this.arr) % 1 === 0) {
+            if (this.arr[i] > 0 && Math.sqrt(this.arr[i]) % 1 === 0) {
             return true
         } else {
             return false
