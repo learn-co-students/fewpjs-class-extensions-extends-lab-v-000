@@ -12,13 +12,17 @@ class Polygon {
         return this.arr.length
     }   
     // calculates the sum of each side (each index in the array) of the polygon. 
+    // Polygon has a perimeter getter that calculates perimeter
     get perimeter() {
         return this.arr.reduce((sum, arr) => sum + arr, 0);
     }
 
 }
 // has a Triangle class
+// has a perimeter getter inherited from Polygon
 class Triangle extends Polygon {
-
+    get isValid() {
+        
+    }
 
 }
