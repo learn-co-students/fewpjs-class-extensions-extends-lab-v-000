@@ -46,6 +46,7 @@ class Square extends Polygon {
         // this.arr [ 5, 5, 5, 5 ]
         return this.arr[0] * this.arr[0]
     }
+    // checks for valid square
     get isValid() {
         // console.log("this.arr", this.arr)
         // this.arr [ 5, 5, 5, 5 ]
@@ -54,11 +55,7 @@ class Square extends Polygon {
         let sideC = this.arr[2];
         let sideD = this.arr[3];
 
-        // checks for valid square
-        // if (Math.sqrt(this.arr[i]) % 1 === 0) {
-        // if Number.isInteger(Math.sqrt(this.arr));
-        // if (this.arr > 0 && Math.sqrt(this.arr) % 1 === 0) {
-            if (this.arr[i] > 0 && Math.sqrt(this.arr[i]) % 1 === 0) {
+        if (this.arr.length === 4 && sideA === sideB && sideA === sideC && sideA === sideD) {
             return true
         } else {
             return false
