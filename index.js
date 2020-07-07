@@ -24,16 +24,45 @@ class Triangle extends Polygon {
     get isValid() {
         // console.log("this.arr", this.arr)
         // this.arr [ 5, 5, 5 ]
-   
+        
         let sideA = this.arr[0]; 
         let sideB = this.arr[1];
         let sideC = this.arr[2];
 
+        // checks for valid triangle
         if (sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB) {
             return true
         } else {
             return false
         }
     }
+}
+// has a Square class
+// has a perimeter getter inherited from Polygon
+class Square extends Polygon {
+    
+    get area() {
+        // console.log("this.arr", this.arr)
+        // this.arr [ 5, 5, 5, 5 ]
+        return this.arr[0] * this.arr[0]
+    }
+    get isValid() {
+        // console.log("this.arr", this.arr)
+        // this.arr [ 5, 5, 5, 5 ]
+        let sideA = this.arr[0]; 
+        let sideB = this.arr[1];
+        let sideC = this.arr[2];
+        let sideD = this.arr[3];
 
+        // checks for valid square
+        // if (Math.sqrt(this.arr[i]) % 1 === 0) {
+        // if Number.isInteger(Math.sqrt(this.arr));
+        if (this.arr > 0 && Math.sqrt(this.arr) % 1 === 0) {
+            return true
+        } else {
+            return false
+        }
+
+
+    }
 }
