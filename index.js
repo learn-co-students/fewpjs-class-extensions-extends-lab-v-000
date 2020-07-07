@@ -22,7 +22,18 @@ class Polygon {
 // has a perimeter getter inherited from Polygon
 class Triangle extends Polygon {
     get isValid() {
-        
+        // console.log("this.arr", this.arr)
+        // this.arr [ 5, 5, 5 ]
+   
+        let sideA = this.arr[0]; 
+        let sideB = this.arr[1];
+        let sideC = this.arr[2];
+
+        if (sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB) {
+            return true
+        } else {
+            return false
+        }
     }
 
 }
