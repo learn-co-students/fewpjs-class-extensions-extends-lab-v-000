@@ -8,11 +8,11 @@ class Polygon {
     }
 
     get perimeter() {
-        // var per = 0;
-        for ( i = 0; i < this.array.legth; i++ ){
-            return this.array.length[i];
+        var count = 0;
+        for (let i = 0; i < this.array.length; i++ ){
+            count += this.array[i];
         }
-        //  return per;
+         return count;
     }
 }
 
