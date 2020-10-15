@@ -28,8 +28,22 @@ class Triangle extends Polygon {
         }
     
     }
-
 }
+
+    class Square extends Polygon {
+         get isValid(){
+            let sideone = (this.array[0]);
+            let sidetwo = (this.array[1]);
+            let sidethree = (this.array[2]);
+            let sidefour = (this.array[3]);
+
+            if (sideone === sidetwo === sidethree === sidefour){
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 
 
 // class countSides extends Polygon  {
