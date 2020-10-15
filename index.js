@@ -37,11 +37,15 @@ class Triangle extends Polygon {
             let sidethree = (this.array[2]);
             let sidefour = (this.array[3]);
 
-            if (sideone === sidetwo === sidethree === sidefour){
+            if (sideone === sidetwo && sidethree === sidefour){
                 return true;
             } else {
                 return false;
             }
+        }
+
+        get area() {
+            return ( this.array.length * this.array.length )
         }
     }
 
