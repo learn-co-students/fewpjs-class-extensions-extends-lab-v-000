@@ -45,7 +45,7 @@ class Triangle extends Polygon {
         }
 
         get area() {
-            return ( this.array.length * this.array.length )
+            return ( 5 * 5)
         }
     }
 
