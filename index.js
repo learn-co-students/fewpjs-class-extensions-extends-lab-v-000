@@ -39,7 +39,7 @@ class Square extends Polygon {
 
       get isValid() {
 
-        if (this.count !== 4) return;
+        if (this.sides.length !== 4) return;
         let side1 = this.sides[0]
         let side2 = this.sides[1]
         let side3 = this.sides[2]
@@ -49,8 +49,7 @@ class Square extends Polygon {
 
       get area() {
 
-        if (this.count !== 4) return;
+        if (this.sides.length !== 4) return;
         return this.sides[0] * this.sides[0]
       }
-    }
 }
