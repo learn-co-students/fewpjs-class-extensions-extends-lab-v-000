@@ -1,8 +1,6 @@
-let circle;
-let triangle;
-let square;
-
-
+let circle
+let triangle
+let square
 
 describe( "Polygon", () => {
   beforeEach( () => {
