@@ -1,42 +1,39 @@
 // Your code here
 class Polygon {
-    constructor(intArray){
-        this.sides = intArray
+    constructor(integers) {
+        this.sides = integers;
     }
 
-    get countSides(){
+    get countSides() {
         return this.sides.length;
     }
 
-    get perimeter(){
-        let sum = 0
-        for (let i = 0; i < this.sides.length; i++){
-            sum = sum + this.sides[i] 
-        }
-        return sum
+    get perimeter() {
+        return this.sides.reduce((memo, side) => memo + side);
     }
-}
+};
 
 class Triangle extends Polygon {
-   get isValid(){
-        const [a,b,c] = this.sides
-        if (a+b > c && b+c > a && c+a > b)
-            return true
+    get isValid() {
+        const [a,b,c] = this.sides;
+        if (a +b > c && b + c > a && c + a > b)
+            return true 
         else
-            return false
+            return false 
     }
-}
+};
 
 class Square extends Polygon {
-    get isValid(){
-        const [a,b,c,d] = this.sides
+    get isValid() {
+        const [a,b,c,d] = this.sides;
         if (a == b && b == c && c == d)
-            return true
-        else
+            return true 
+        else 
             return false
     }
 
-    get area(){
-        return this.sides[0] ** 2
+    get area() {
+        const [a,b,c,d] = this.sides;
+        return a * b;
     }
-}
+};
